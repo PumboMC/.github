@@ -1,0 +1,19 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [":semanticCommitsDisabled", ":pinVersions"],
+  "commitMessagePrefix": "DEPS:",
+  "baseBranchPatterns": ["dev"],
+  "labels": ["dependencies"],
+  "dependencyDashboardLabels": ["dependencies"],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": ["at any time"]
+  },
+  "packageRules": [
+    {
+      "description": "A new Pumpkin plugin API version becomes a new build target instead of replacing the pinned api262/api263, so its updates wait for approval on the Dependency Dashboard",
+      "matchPackageNames": ["pumpkin-plugin-api"],
+      "dependencyDashboardApproval": true
+    }
+  ]
+}
