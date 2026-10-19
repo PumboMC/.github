@@ -4,16 +4,16 @@
   "commitMessagePrefix": "DEPS:",
   "baseBranchPatterns": ["dev"],
   "labels": ["dependencies"],
-  "dependencyDashboardLabels": ["dependencies"],
+  "dependencyDashboard": false,
   "lockFileMaintenance": {
     "enabled": true,
     "schedule": ["at any time"]
   },
   "packageRules": [
     {
-      "description": "A new Pumpkin plugin API version becomes a new build target instead of replacing the pinned api262/api263, so its updates wait for approval on the Dependency Dashboard",
+      "description": "Pumpkin plugin API versions are build targets (api262, api263) that change by hand with each Pumpkin release",
       "matchPackageNames": ["pumpkin-plugin-api"],
-      "dependencyDashboardApproval": true
+      "enabled": false
     }
   ]
 }
