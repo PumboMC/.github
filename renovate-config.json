@@ -2,7 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [":semanticCommitsDisabled", ":pinVersions"],
   "commitMessagePrefix": "DEPS:",
-  "baseBranchPatterns": ["dev"],
+  "baseBranchPatterns": ["main"],
   "labels": ["dependencies"],
   "dependencyDashboard": false,
   "lockFileMaintenance": {
