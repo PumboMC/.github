@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="banner.jpg" alt="PumboProx and the Pumbo plugins for Pumpkin servers" width="100%">
-</p>
+
 
 <h3 align="center">Everything you need to run a network on Pumpkin.</h3>
 
